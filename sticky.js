@@ -1,4 +1,4 @@
-(function () {
+//(function () {
 	let draggedCard = null;
   let grabStartX;
   let grabStartY;
@@ -191,5 +191,5 @@
   document.querySelector(".addButton").addEventListener("click", onAddCard, false)
   document.querySelector(".saveButton").addEventListener("click", onSave, false)
   
-}
-)();
+//}
+//)();
