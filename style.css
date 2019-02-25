@@ -1,0 +1,93 @@
+body {
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+.card {
+  left: 0;
+  top: 0;
+  min-height: 100px;
+  min-width: 100px;
+  position: absolute;
+  padding-top: 20px;
+  border: solid black;
+  border-width: 0 1px;
+}
+
+
+
+.card .label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 20px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card .label .labelText {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent;
+  height: 20px;
+  width: 100%;
+  resize: none;
+  text-align: center;
+}
+
+.card:hover {
+    z-index: 1;
+}
+
+.card .label .labelText:hover {
+    cursor: grab;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.card .label .labelText:active {
+    cursor: grabbing;
+    background: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+.card .cardContent {
+  min-height: 100px;
+  min-width: 100px;
+  padding: 5px 5px;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid black;
+  border-bottom-width: 1px;
+}
+
+.changeColorButton {
+  position: absolute;
+  border: none;
+  top: 2px;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  z-index: 1;
+  left: 2px;
+  border-radius: 50%;
+  background: #1E9600;
+background: linear-gradient(to right, #FF0000, #FFF200, #1E9600);
+}
+
+.deleteCardButton {
+  position: absolute;
+  border: none;
+  top: 2px;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  z-index: 1;
+  right: 2px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+
